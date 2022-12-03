@@ -1,5 +1,5 @@
 let fs = require('fs')
-let fileName = '2input.txt'
+let fileName = 'inputs\\2input.txt'
 fs.readFile(fileName, 'utf8', (err, data) => {
 
     let rounds = data.split('\n')
