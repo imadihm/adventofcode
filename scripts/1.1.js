@@ -8,9 +8,7 @@ fs.readFile(fileName, 'utf8', (err, data) => {
 
     console.log(group)
     group.forEach(el => {
-
         allSumsArr.push(el.split(' ').map(Number).reduce((summer, a) => summer + a, 0))
     })
-
     console.log(Math.max(...allSumsArr))
 })

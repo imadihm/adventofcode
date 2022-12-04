@@ -10,20 +10,19 @@ fs.readFile(fileName, 'utf8', (err, data) => {
 
 
     for (let index = 0; index < arrOfData.length; index += 3) {
-
         let tripleMfs = arrOfData.slice(index, index + 3)
 
         for (const iterator of tripleMfs[0]) {
-
             if (tripleMfs[1].includes(iterator) && tripleMfs[2].includes(iterator)) {
 
                 if (iterator == iterator.toLowerCase()) {
-
                     totalSum += iterator.charCodeAt(0) - 96
                     break;
+
                 } else {
                     totalSum += iterator.charCodeAt(0) - 38
                     break;
+
                 }
 
             }
